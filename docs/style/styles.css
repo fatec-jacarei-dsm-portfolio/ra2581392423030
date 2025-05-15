@@ -1,0 +1,109 @@
+/* Estilos básicos para o portfólio */
+
+
+body{
+    font-family: var(--p);
+    background-color:var(--darkbackground);
+  
+    margin: 0;    /* Remove a margem padrão */
+    /* display: flex; */
+    justify-content: center; /* Alinha horizontalmente */
+    
+}
+
+:root {
+    --primarycolor: #0d1010;
+    --darkbackground: #0d1010;
+    --lightbackground: white;
+    --graylight: #aeb6b0;
+    --secondcolor: #69b1a5;
+    --graydark: #656a68;
+    --tertiarycolor: white;
+    
+    /* --p: Arial; */
+}
+
+
+.divisor {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, black, #69b1a5);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Definições do projeto*/
+h1 {
+    color: var(--tertiarycolor);
+}
+
+#personalproject{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 20px;                
+    flex-wrap: wrap;          
+}
+
+
+/* Estilo das imagens */
+#personalproject img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#personalproject p {
+    margin-top: 5px;
+}
+
+.meimg {
+    width: 50%;
+    height: 50%;
+}
+
+#personalproject img:hover {
+    transform: scale(1.05); /* Efeito de hover na imagem */
+}
+
+.modal p{
+    color: var(--primarycolor);
+}
+
+.modal h3{
+    color: var(--primarycolor);
+}
+
+/* Estilo do Modal */
+.modal-content {
+    background-color: var(--darkbackground);
+    color: var(--tertiarycolor);
+}
+
+.modal-title{
+    color: var(--primarycolor);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body a {
+    color: var(--secondcolor);
+    text-decoration: none;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+       
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <header class="container py-4">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#personalproject">Portfólio</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <section class="container text-center py-5">
+        <h1 class="display-4">WE ARE <span class="text-success">CREATIVE</span> DESIGN AGENCY</h1>
+        <p class="lead">Learn more about our brand, communication strategies, and web solutions. Bring your project to life with us!</p>
+        <a href="#about" class="btn btn-outline-success btn-lg mt-3">Projetos</a>
+    </section> -->
+
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h2>Sobre mim</h2>
+                <p>Meu nome é Andressa, tenho 21 anos e atualmente estou no 2º semestre de Desenvolvimento de Software Multiplataformas, na FATEC de Jacareí. Trabalho na área de programação há 2 anos.</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="../style/image/teste.png" alt="About Me" class="meimg">
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div id="personalproject" class="container py-5">
+            <div class="divisor">Projeto Pessoal</div>
+
+            <div id="First">
+                <img src="../style/image/teste.png" alt="Projeto 1" onclick="mostrarPopup('First')">
+                <p>Nome do projeto do primeiro semestre</p>
+            </div>
+
+            <div id="Second">
+                <img src="../style/image/teste.png" alt="Projeto 2" onclick="mostrarPopup('Second')">
+                <p>Nome do projeto do segundo semestre</p>
+            </div>
+
+            <div id="Third">
+                <img src="../style/image/teste.png" alt="Projeto 3" onclick="mostrarPopup('Third')">
+                <p>Nome do projeto do terceiro semestre</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Detalhes do Projeto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Informações do projeto vão aparecer aqui -->
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <footer class="container text-center py-4">
+        <p>© 2025 Andressa Stéphane Toledo da Silva. Todos os direitos reservados.</p>
+    </footer>
+
+   
+    <script>
+        // Função para mostrar o popup (modal)
+        function mostrarPopup(projetoId) {
+            // Definindo o conteúdo do modal com base no projeto
+            let modalContent = '';
+            if (projetoId === 'First') {
+                modalContent = `
+                    <h3>Projeto do Primeiro Semestre</h3>
+                    <p><strong>Data de Conclusão:</strong> Junho 2023</p>
+                    <p><strong>Semestre:</strong> 1º Semestre</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/exemplo/projeto1" target="_blank">Visite o GitHub</a></p>
+                `;
+            } else if (projetoId === 'Second') {
+                modalContent = `
+                    <h3>Projeto do Segundo Semestre</h3>
+                    <p><strong>Data de Conclusão:</strong> Dezembro 2023</p>
+                    <p><strong>Semestre:</strong> 2º Semestre</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/exemplo/projeto2" target="_blank">Visite o GitHub</a></p>
+                `;
+            } else if (projetoId === 'Third') {
+                modalContent = `
+                    <h3>Projeto do Terceiro Semestre</h3>
+                    <p><strong>Data de Conclusão:</strong> Junho 2024</p>
+                    <p><strong>Semestre:</strong> 3º Semestre</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/exemplo/projeto3" target="_blank">Visite o GitHub</a></p>
+                `;
+            }
+
+            // Insere o conteúdo no modal
+            document.getElementById('modalBody').innerHTML = modalContent;
+
+            // Exibe o modal
+            var myModal = new bootstrap.Modal(document.getElementById('projectModal'), {});
+            myModal.show();
+        }
+    </script>
+
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
