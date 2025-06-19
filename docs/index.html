@@ -1,129 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="../style/styles.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-       
-    </style>
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Andressa Toledo</title>
 </head>
-<body class="bg-dark text-white">
-    <header class="container py-4">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#personalproject">Portfólio</a>
-            </div>
-        </nav>
-    </header>
 
-    <!-- <section class="container text-center py-5">
-        <h1 class="display-4">WE ARE <span class="text-success">CREATIVE</span> DESIGN AGENCY</h1>
-        <p class="lead">Learn more about our brand, communication strategies, and web solutions. Bring your project to life with us!</p>
-        <a href="#about" class="btn btn-outline-success btn-lg mt-3">Projetos</a>
-    </section> -->
-
-    <section id="about" class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-md-8">
-                <h2>Sobre mim</h2>
-                <p>Meu nome é Andressa, tenho 21 anos e atualmente estou no 2º semestre de Desenvolvimento de Software Multiplataformas, na FATEC de Jacareí. Trabalho na área de programação há 2 anos.</p>
-            </div>
-            <div class="col-md-2 text-center">
-                <img src="../style/image/teste.png" alt="About Me" class="meimg">
-            </div>
-        </div>
-    </section>
-    
-    <section>
-        <div id="personalproject" class="container py-5">
-            <div class="divisor">Projeto Pessoal</div>
-
-            <div id="First">
-                <img src="../style/image/teste.png" alt="Projeto 1" onclick="mostrarPopup('First')">
-                <p>Nome do projeto do primeiro semestre</p>
-            </div>
-
-            <div id="Second">
-                <img src="../style/image/teste.png" alt="Projeto 2" onclick="mostrarPopup('Second')">
-                <p>Nome do projeto do segundo semestre</p>
-            </div>
-
-            <div id="Third">
-                <img src="../style/image/teste.png" alt="Projeto 3" onclick="mostrarPopup('Third')">
-                <p>Nome do projeto do terceiro semestre</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-        
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModalLabel">Detalhes do Projeto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="modalBody">
-                    <!-- Informações do projeto vão aparecer aqui -->
-                </div>
-                <div class="modal-footer">
-                    
-                </div>
-            </div>
-        </div>
+<body>
+    <div class="floating-elements">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
     </div>
 
- 
-    <footer class="container text-center py-4">
-        <p>© 2025 Andressa Stéphane Toledo da Silva. Todos os direitos reservados.</p>
-    </footer>
+    <header class="header">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Portfólio</h1>
+                    <p>Meu nome é Andressa Stéphane Toledo da Silva, tenho 21 anos e atuo na área de desenvolvimento de
+                        sistemas, utilizando metodologias ágeis para criar soluções eficientes e inovadoras.</p>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/andressatoledo" class="btn btn-primary" target="_blank">Perfil do
+                            Github</a>
 
-   
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div>
+                            <img src="img/Foto.jfif" alt="Minha foto" width="150px" height="150px"
+                                class="profile-image">
+                        </div>
+                        <h3>Andressa Toledo</h3>
+                        <p>Estudante e desenvolvedora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="services">
+        <div class="container">
+            <div class="process-header">
+                <h2>Aprendizagem baseada em projeto</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" onclick="serviceClick(this)">
+                    <div class="ABP">
+                        <h1>Hypscrum</h1>
+                    </div>
+                    <h3>Primeiro semestre</h3>
+                    <p>Este projeto é um sistema web desenvolvido para guiar os usuários no aprendizado do Scrum. O
+                        sistema inclui seções de instrução com avaliações e um mecanismo para emissão de certificados de
+                        conclusão do curso. Ele é construído utilizando HTML, CSS, JavaScript e PostgreSQL, e as telas
+                        foram prototipadas no Figma.</p>
+                    <a href="https://github.com/andressatoledo/HypScrum" target="_blank"
+                        class="btn btn-primary">Github</a>
+                </div>
+                <div class="service-card">
+                    <div class="ABP">
+                        <h1>HypoHeat</h1>
+                    </div>
+                    <h3>Segundo semestre</h3>
+
+                    <p>Especificar e desenvolver uma aplicação web que permita aos usuários acessar informações sobre
+                        áreas queimadas, risco de fogo e focos de calor do Programa Queimadas do INPE. A aplicação
+                        contará com gráficos e mapas interativos, além de funcionalidades para aplicação de filtros
+                        personalizados.</p>
+                    <a href="https://github.com/andressatoledo/HypoHeat" target="_blank"
+                        class="btn btn-primary">Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="matters">
+        <div class="container">
+            <div class="process-header">
+                <h2>Atividades complementares</h2>
+            </div>
+            <div class="semesters-grid">
+                <div class="semester-card" onclick="openModal(1)">1º Semestre</div>
+                <div class="semester-card" onclick="openModal(2)">2º Semestre</div>
+            </div>
+        </div>
+
+        <div class="modal" id="semesterModal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div class="matters-grid" id="matters-container"></div>
+            </div>
+
+        </div>
+    </section>
+
     <script>
-        // Função para mostrar o popup (modal)
-        function mostrarPopup(projetoId) {
-            // Definindo o conteúdo do modal com base no projeto
-            let modalContent = '';
-            if (projetoId === 'First') {
-                modalContent = `
-                    <h3>Projeto do Primeiro Semestre</h3>
-                    <p><strong>Data de Conclusão:</strong> Junho 2023</p>
-                    <p><strong>Semestre:</strong> 1º Semestre</p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/exemplo/projeto1" target="_blank">Visite o GitHub</a></p>
-                `;
-            } else if (projetoId === 'Second') {
-                modalContent = `
-                    <h3>Projeto do Segundo Semestre</h3>
-                    <p><strong>Data de Conclusão:</strong> Dezembro 2023</p>
-                    <p><strong>Semestre:</strong> 2º Semestre</p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/exemplo/projeto2" target="_blank">Visite o GitHub</a></p>
-                `;
-            } else if (projetoId === 'Third') {
-                modalContent = `
-                    <h3>Projeto do Terceiro Semestre</h3>
-                    <p><strong>Data de Conclusão:</strong> Junho 2024</p>
-                    <p><strong>Semestre:</strong> 3º Semestre</p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/exemplo/projeto3" target="_blank">Visite o GitHub</a></p>
-                `;
-            }
+    
+        function animateClick(element, event) {
 
-            // Insere o conteúdo no modal
-            document.getElementById('modalBody').innerHTML = modalContent;
-
-            // Exibe o modal
-            var myModal = new bootstrap.Modal(document.getElementById('projectModal'), {});
-            myModal.show();
+            document.body.style.cursor = 'wait';
+            setTimeout(() => {
+                window.location.href = element.href;
+            }, 500);
         }
+
+
+        
+        function logoClick(element) {
+            element.style.transform = 'scale(1.1) rotate(5deg)';
+            element.style.background = 'rgba(255, 107, 53, 0.2)';
+
+            setTimeout(() => {
+                element.style.transform = 'scale(1) rotate(0deg)';
+                element.style.background = 'rgba(255, 255, 255, 0.05)';
+            }, 200);
+        }
+
+    
+        function serviceClick(element) {
+            element.style.transform = 'translateY(-15px) scale(1.02)';
+            element.style.boxShadow = '0 25px 50px rgba(255, 107, 53, 0.3)';
+
+            setTimeout(() => {
+                element.style.transform = 'translateY(-10px) scale(1)';
+                element.style.boxShadow = '0 20px 40px rgba(255, 107, 53, 0.2)';
+            }, 300);
+        }
+
+       
+        function stepClick(element) {
+            const stepNumber = element.querySelector('.step-number');
+            stepNumber.style.transform = 'scale(1.2) rotate(360deg)';
+            stepNumber.style.background = 'linear-gradient(135deg, #901430, #901430)';
+
+            setTimeout(() => {
+                stepNumber.style.transform = 'scale(1) rotate(0deg)';
+                stepNumber.style.background = 'linear-gradient(135deg, #901430, #901430)';
+            }, 500);
+        }
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .step, .logo').forEach(el => {
+            if (el) {
+                observer.observe(el);
+            }
+        });
+
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-2px)';
+            });
+
+            btn.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        const semesterData = {
+            1: [
+                { name: "Algoritmo e Lógica de programação", link: "https://github.com/andressatoledo/Algoritmo", description: "Estudo das bases fundamentais da programação, abordando conceitos de lógica, estruturas de controle, variáveis e funções. A prática foi realizada utilizando JavaScript para desenvolver algoritmos que resolvem problemas simples e aplicam conceitos de lógica computacional."},
+                { name: "Desenvolvimento Web I", link: "https://github.com/andressatoledo/Desenvolvimento-web-I", description: "Introdução ao desenvolvimento de sites estáticos, com foco em HTML, CSS e Bootstrap. Aprendi a estruturar páginas web, aplicar estilos visuais e criar layouts responsivos utilizando componentes básicos do Bootstrap." }
+            ],
+            2: [
+                { name: "Matemática para computação", link: "https://github.com/andressatoledo/MatematicaComputacao", description:"Estudo dos conceitos matemáticos essenciais para a programação, incluindo lógica matemática, conjuntos, funções e operações algébricas, com foco na aplicação prática para resolver problemas computacionais." },
+                { name: "Estrutura de Dados", link: "https://github.com/andressatoledo/EstruturaDados", description:"Estudo das principais estruturas para organização e armazenamento de dados, como listas, pilhas e filas, além de algoritmos de ordenação, incluindo Bubble Sort, Selection Sort e Insertion Sort, aplicados para otimizar o processamento de informações." },
+                { name: "Técnicas de programação", link: "https://github.com/andressatoledo/Tecnicas-de-Programacao-I", description:"Introdução à programação orientada a objetos, abordando conceitos como classes, objetos, herança e encapsulamento, com foco na construção de códigos mais organizados, reutilizáveis e fáceis de manter."},
+                { name: "Desenvolvimento Web II", link: "https://github.com/andressatoledo/Desenvolvimento-web-II", description:"Aprendizado prático em React e TypeScript, utilizando conceitos como Context, useEffect, interfaces e manipulação de dados geoespaciais para criar aplicações web modernas e funcionais." }
+            ],
+
+        };
+
+       function openModal(semester) {
+            const modal = document.getElementById("semesterModal");
+            const modalTitle = document.getElementById("modal-title");
+            const mattersContainer = document.getElementById("matters-container");
+
+            modalTitle.textContent = `${semester}º Semestre`;
+            mattersContainer.innerHTML = "";
+
+            (semesterData[semester] || []).forEach(({ name, link, description }) => {
+                const card = document.createElement("div");
+                card.className = "matter-card";
+                card.onclick = () => window.open(link, "_blank");
+                card.innerHTML = `
+                    <div>
+                        <h3>${name}</h3>
+                        <hr>
+                        <p class="matter-space" >${description || "Descrição não disponível."}</p>
+                    </div>
+                `;
+                mattersContainer.appendChild(card);
+            });
+
+            modal.style.display = "flex";
+        }
+
+
+        function closeModal() {
+            const modal = document.getElementById("semesterModal");
+            modal.style.display = "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".semester-card").forEach((el, idx) => {
+                el.addEventListener("click", () => openModal(idx + 1));
+            });
+
+            document.querySelector(".close-modal").addEventListener("click", closeModal);
+
+            document.getElementById("semesterModal").addEventListener("click", (e) => {
+                if (e.target.id === "semesterModal") {
+                    closeModal();
+                }
+            });
+        });
+
+
     </script>
-
-
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
