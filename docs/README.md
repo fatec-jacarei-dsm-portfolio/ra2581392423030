@@ -1,3 +1,7 @@
-# Documentação
+# 📁 Portfólio
+---
+Este portfólio reúne os projetos e trabalhos que desenvolvi durante o curso.  
+O objetivo é mostrar meu aprendizado, esforço e crescimento na área de tecnologia.
+---
 
-Coloque a documentação aqui.
+✨ Obrigado(a) pela visita!
