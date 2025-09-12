@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Andressa Toledo</title>
 </head>
 
@@ -14,21 +16,21 @@
         <div class="floating-circle"></div>
         <div class="floating-circle"></div>
     </div>
-
     <header class="header">
         <div class="container">
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1>Portfólio</h1>
+            <div class="about-me-section">
+                <div class="about-me-content">
+                    <h1>Sobre mim</h1>
                     <p>Meu nome é Andressa Stéphane Toledo da Silva, tenho 21 anos e atuo na área de desenvolvimento de
                         sistemas, utilizando metodologias ágeis para criar soluções eficientes e inovadoras.</p>
-                    <div class="cta-buttons">
-                        <a href="https://github.com/andressatoledo" class="btn btn-primary" target="_blank">Perfil do
-                            Github</a>
-
-                    </div>
+                    <h2>Hobbies</h2>
+                    <li>Ler</li>
+                    <li>Assistir séries e doramas</li>
+                    <li>Ouvir músicas</li>
+                    <li>Jardinagem</li>
+                    <li>Praticar esportes</li>
                 </div>
-                <div class="hero-image">
+                <div class="about-me-image">
                     <div class="profile-card">
                         <div>
                             <img src="img/Foto.jfif" alt="Minha foto" width="150px" height="150px"
@@ -41,13 +43,14 @@
             </div>
         </div>
     </header>
-    <section class="services">
+
+    <section class="projects">
         <div class="container">
             <div class="process-header">
-                <h2>Aprendizagem baseada em projeto</h2>
+                <h2>Projetos Acadêmicos</h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card" onclick="serviceClick(this)">
+            <div class="projects-grid">
+                <div class="project-card" onclick="projectClick(this)">
                     <div class="ABP">
                         <h1>Hypscrum</h1>
                     </div>
@@ -56,10 +59,27 @@
                         sistema inclui seções de instrução com avaliações e um mecanismo para emissão de certificados de
                         conclusão do curso. Ele é construído utilizando HTML, CSS, JavaScript e PostgreSQL, e as telas
                         foram prototipadas no Figma.</p>
-                    <a href="https://github.com/andressatoledo/HypScrum" target="_blank"
-                        class="btn btn-primary">Github</a>
+                    <p>Participação: Atuei na prototipação, no levantamento de materiais e no desenvolvimento do
+                        projeto, contribuindo também para a padronização das telas e
+                        garantindo consistência na interface.</p>
+                    <div class="process-header social-links">
+                        <a href="https://github.com/andressatoledo/HypScrum" target="_blank" rel="noopener noreferrer">
+                            <img class="icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub" />
+                        </a>
+                        <img class="icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5" />
+                        <img class="icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS3" />
+                        <img class="icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL" />
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="project-card">
                     <div class="ABP">
                         <h1>HypoHeat</h1>
                     </div>
@@ -69,8 +89,26 @@
                         áreas queimadas, risco de fogo e focos de calor do Programa Queimadas do INPE. A aplicação
                         contará com gráficos e mapas interativos, além de funcionalidades para aplicação de filtros
                         personalizados.</p>
-                    <a href="https://github.com/andressatoledo/HypoHeat" target="_blank"
-                        class="btn btn-primary">Github</a>
+
+                    <p>Participação: Atuei como Scrum Master, garantindo que o time seguisse corretamente o processo
+                        e entregasse resultados de qualidade, e também como desenvolvedora, contribuindo diretamente no
+                        desenvolvimento de funcionalidades e soluções do projeto com foco no Front-End.</p>
+                    <div class="process-header social-links">
+                        <a href="https://github.com/andressatoledo/HypoHeat" target="_blank" rel="noopener noreferrer">
+                            <img class="icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub" />
+                        </a>
+                        <img class="icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" />
+                        <img class="icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                            alt="TypeScript" />
+                        <img class="icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,8 +134,26 @@
         </div>
     </section>
 
+    <section class="matters">
+        <div class="container">
+            <div class="process-header">
+                <h2>Contato</h2>
+                <p>Entre em contato ou veja mais sobre meu trabalho:</p>
+                <div class="social-links">
+                    <a href="https://github.com/andressatoledo" class="github" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/andressa-toledo/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
-    
+
         function animateClick(element, event) {
 
             document.body.style.cursor = 'wait';
@@ -107,7 +163,7 @@
         }
 
 
-        
+
         function logoClick(element) {
             element.style.transform = 'scale(1.1) rotate(5deg)';
             element.style.background = 'rgba(255, 107, 53, 0.2)';
@@ -118,29 +174,29 @@
             }, 200);
         }
 
-    
-        function serviceClick(element) {
+
+        function projectClick(element) {
             element.style.transform = 'translateY(-15px) scale(1.02)';
             element.style.boxShadow = '0 25px 50px rgba(255, 107, 53, 0.3)';
 
             setTimeout(() => {
                 element.style.transform = 'translateY(-10px) scale(1)';
-                element.style.boxShadow = '0 20px 40px rgba(255, 107, 53, 0.2)';
+                element.style.boxShadow = '0 20px 10px rgba(255, 107, 53, 0.2)';
             }, 300);
         }
 
-       
-        function stepClick(element) {
-            const stepNumber = element.querySelector('.step-number');
-            stepNumber.style.transform = 'scale(1.2) rotate(360deg)';
-            stepNumber.style.background = 'linear-gradient(135deg, #901430, #901430)';
 
-            setTimeout(() => {
-                stepNumber.style.transform = 'scale(1) rotate(0deg)';
-                stepNumber.style.background = 'linear-gradient(135deg, #901430, #901430)';
-            }, 500);
-        }
-        
+        // function stepClick(element) {
+        //     const stepNumber = element.querySelector('.step-number');
+        //     stepNumber.style.transform = 'scale(1.2) rotate(360deg)';
+        //     stepNumber.style.background = 'linear-gradient(135deg, #62b1a7, black)';
+
+        //     setTimeout(() => {
+        //         stepNumber.style.transform = 'scale(1) rotate(0deg)';
+        //         stepNumber.style.background = 'linear-gradient(135deg, #62b1a7, black)';
+        //     }, 500);
+        // }
+
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -154,7 +210,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-card, .step, .logo').forEach(el => {
+        document.querySelectorAll('.project-card, .step, .logo').forEach(el => {
             if (el) {
                 observer.observe(el);
             }
@@ -172,19 +228,19 @@
 
         const semesterData = {
             1: [
-                { name: "Algoritmo e Lógica de programação", link: "https://github.com/andressatoledo/Algoritmo", description: "Estudo das bases fundamentais da programação, abordando conceitos de lógica, estruturas de controle, variáveis e funções. A prática foi realizada utilizando JavaScript para desenvolver algoritmos que resolvem problemas simples e aplicam conceitos de lógica computacional."},
+                { name: "Algoritmo e Lógica de programação", link: "https://github.com/andressatoledo/Algoritmo", description: "Estudo das bases fundamentais da programação, abordando conceitos de lógica, estruturas de controle, variáveis e funções. A prática foi realizada utilizando JavaScript para desenvolver algoritmos que resolvem problemas simples e aplicam conceitos de lógica computacional." },
                 { name: "Desenvolvimento Web I", link: "https://github.com/andressatoledo/Desenvolvimento-web-I", description: "Introdução ao desenvolvimento de sites estáticos, com foco em HTML, CSS e Bootstrap. Aprendi a estruturar páginas web, aplicar estilos visuais e criar layouts responsivos utilizando componentes básicos do Bootstrap." }
             ],
             2: [
-                { name: "Matemática para computação", link: "https://github.com/andressatoledo/MatematicaComputacao", description:"Estudo dos conceitos matemáticos essenciais para a programação, incluindo lógica matemática, conjuntos, funções e operações algébricas, com foco na aplicação prática para resolver problemas computacionais." },
-                { name: "Estrutura de Dados", link: "https://github.com/andressatoledo/EstruturaDados", description:"Estudo das principais estruturas para organização e armazenamento de dados, como listas, pilhas e filas, além de algoritmos de ordenação, incluindo Bubble Sort, Selection Sort e Insertion Sort, aplicados para otimizar o processamento de informações." },
-                { name: "Técnicas de programação", link: "https://github.com/andressatoledo/Tecnicas-de-Programacao-I", description:"Introdução à programação orientada a objetos, abordando conceitos como classes, objetos, herança e encapsulamento, com foco na construção de códigos mais organizados, reutilizáveis e fáceis de manter."},
-                { name: "Desenvolvimento Web II", link: "https://github.com/andressatoledo/Desenvolvimento-web-II", description:"Aprendizado prático em React e TypeScript, utilizando conceitos como Context, useEffect, interfaces e manipulação de dados geoespaciais para criar aplicações web modernas e funcionais." }
+                { name: "Matemática para computação", link: "https://github.com/andressatoledo/MatematicaComputacao", description: "Estudo dos conceitos matemáticos essenciais para a programação, incluindo lógica matemática, conjuntos, funções e operações algébricas, com foco na aplicação prática para resolver problemas computacionais." },
+                { name: "Estrutura de Dados", link: "https://github.com/andressatoledo/EstruturaDados", description: "Estudo das principais estruturas para organização e armazenamento de dados, como listas, pilhas e filas, além de algoritmos de ordenação, incluindo Bubble Sort, Selection Sort e Insertion Sort, aplicados para otimizar o processamento de informações." },
+                { name: "Técnicas de programação", link: "https://github.com/andressatoledo/Tecnicas-de-Programacao-I", description: "Introdução à programação orientada a objetos, abordando conceitos como classes, objetos, herança e encapsulamento, com foco na construção de códigos mais organizados, reutilizáveis e fáceis de manter." },
+                { name: "Desenvolvimento Web II", link: "https://github.com/andressatoledo/Desenvolvimento-web-II", description: "Aprendizado prático em React e TypeScript, utilizando conceitos como Context, useEffect, interfaces e manipulação de dados geoespaciais para criar aplicações web modernas e funcionais." }
             ],
 
         };
 
-       function openModal(semester) {
+        function openModal(semester) {
             const modal = document.getElementById("semesterModal");
             const modalTitle = document.getElementById("modal-title");
             const mattersContainer = document.getElementById("matters-container");
