@@ -8,9 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Andressa Toledo</title>
+    <style>
+       
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 107, 53, 0.9);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .lang-switch:hover {
+            background: rgba(255, 107, 53, 1);
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
+  
+    <button class="lang-switch" id="langToggle" onclick="toggleLanguage()">EN</button>
+
     <div class="floating-elements">
         <div class="floating-circle"></div>
         <div class="floating-circle"></div>
@@ -19,27 +45,30 @@
     <header class="header">
         <div class="container">
             <div class="about-me-section">
-                <div class="about-me-content">
-                    <h1>Sobre mim</h1>
-                    <p>Meu nome é Andressa Stéphane Toledo da Silva, tenho 22 anos e atuo na área de desenvolvimento de
-                        sistemas, utilizando metodologias ágeis para criar soluções eficientes e inovadoras.</p>
-                    <h2>Hobbies</h2>
-                    <li>Ler</li>
-                    <li>Assistir séries e doramas</li>
-                    <li>Fotografia</li>
-                    <li>Jardinagem</li>
-                    <li>Praticar esportes</li>
-                </div>
                 <div class="about-me-image">
-                    <div class="profile-card">
-                        <div>
-                            <img src="img/Foto.jfif" alt="Minha foto" width="150px" height="150px"
-                                class="profile-image">
-                        </div>
-                        <h3>Andressa Toledo</h3>
-                        <p>Estudante e desenvolvedora</p>
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <img src="img/Foto.jpeg" alt="Minha foto" class="profile-image">
                     </div>
+                    <h3>Andressa Toledo</h3>
+                    <p data-pt="Estudante e desenvolvedora" data-en="Student and developer">Estudante e desenvolvedora</p>
                 </div>
+            </div>
+
+           
+            <div class="about-me-content">
+                <h1 data-pt="Sobre mim" data-en="About me">Sobre mim</h1>
+                <p data-pt="Meu nome é Andressa Stéphane Toledo da Silva, tenho 22 anos e atuo na área de desenvolvimento de sistemas, utilizando metodologias ágeis para criar soluções eficientes e inovadoras." data-en="My name is Andressa Stéphane Toledo da Silva, I am 22 years old and I work in systems development, using agile methodologies to create efficient and innovative solutions.">Meu nome é Andressa Stéphane Toledo da Silva, tenho 22 anos e atuo na área de desenvolvimento de sistemas, utilizando metodologias ágeis para criar soluções eficientes e inovadoras.</p>
+                
+                <h2 data-pt="Hobbies" data-en="Hobbies">Hobbies</h2>
+                <ul>
+                    <li data-pt="Ler;" data-en="Reading;">Ler;</li>
+                    <li data-pt="Assistir séries e doramas;" data-en="Watching series and doramas;">Assistir séries e doramas;</li>
+                    <li data-pt="Fotografia;" data-en="Photography;">Fotografia;</li>
+                    <li data-pt="Jardinagem;" data-en="Gardening;">Jardinagem;</li>
+                    <li data-pt="Praticar esportes." data-en="Practicing sports.">Praticar esportes.</li>
+                </ul>
+            </div>
             </div>
         </div>
     </header>
@@ -47,19 +76,19 @@
     <section class="projects">
         <div class="container">
             <div class="process-header">
-                <h2>Projetos Acadêmicos</h2>
+                <h2 data-pt="Projetos Acadêmicos" data-en="Academic Projects">Projetos Acadêmicos</h2>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="ABP">
                         <h1>HypScrum</h1>
                     </div>
-                    <h3>Primeiro semestre</h3>
-                    <p>Este projeto é um sistema web desenvolvido para guiar os usuários no aprendizado do Scrum. O
+                    <h3 data-pt="Primeiro semestre" data-en="First semester">Primeiro semestre</h3>
+                    <p data-pt="Este projeto é um sistema web desenvolvido para guiar os usuários no aprendizado do Scrum. O sistema inclui seções de instrução com avaliações e um mecanismo para emissão de certificados de conclusão do curso. Ele é construído utilizando HTML, CSS, JavaScript e PostgreSQL, e as telas foram prototipadas no Figma." data-en="This project is a web system developed to guide users in learning Scrum. The system includes instructional sections with quizzes and a mechanism for issuing course completion certificates. It is built using HTML, CSS, JavaScript, and PostgreSQL, and the screens were prototyped in Figma.">Este projeto é um sistema web desenvolvido para guiar os usuários no aprendizado do Scrum. O
                         sistema inclui seções de instrução com avaliações e um mecanismo para emissão de certificados de
                         conclusão do curso. Ele é construído utilizando HTML, CSS, JavaScript e PostgreSQL, e as telas
                         foram prototipadas no Figma.</p>
-                    <p>Participação: Atuei na prototipação, no levantamento de materiais e no desenvolvimento do
+                    <p data-pt="Participação: Atuei na prototipação, no levantamento de materiais e no desenvolvimento do projeto, contribuindo também para a padronização das telas e garantindo consistência na interface." data-en="Participation: I worked on prototyping, material gathering, and project development, also contributing to screen standardization and ensuring interface consistency.">Participação: Atuei na prototipação, no levantamento de materiais e no desenvolvimento do
                         projeto, contribuindo também para a padronização das telas e
                         garantindo consistência na interface.</p>
                     <div class="process-header social-links">
@@ -83,14 +112,14 @@
                     <div class="ABP">
                         <h1>HypoHeat</h1>
                     </div>
-                    <h3>Segundo semestre</h3>
+                    <h3 data-pt="Segundo semestre" data-en="Second semester">Segundo semestre</h3>
 
-                    <p>Especificar e desenvolver uma aplicação web que permita aos usuários acessar informações sobre
+                    <p data-pt="É uma aplicação web que permite aos usuários acessar informações sobre áreas queimadas, risco de fogo e focos de calor do Programa Queimadas do INPE. A aplicação conta com gráficos e mapas interativos, além de funcionalidades para aplicação de filtros personalizados." data-en="It is a web application that allows users to access information about burned areas, fire risk, and heat spots from INPE's Queimadas Program. The application features interactive charts and maps, as well as functionality for applying custom filters.">É uma aplicação web que permite aos usuários acessar informações sobre
                         áreas queimadas, risco de fogo e focos de calor do Programa Queimadas do INPE. A aplicação
-                        contará com gráficos e mapas interativos, além de funcionalidades para aplicação de filtros
+                        conta com gráficos e mapas interativos, além de funcionalidades para aplicação de filtros
                         personalizados.</p>
 
-                    <p>Participação: Atuei como Scrum Master, garantindo que o time seguisse corretamente o processo
+                    <p data-pt="Participação: Atuei como Scrum Master, garantindo que o time seguisse corretamente o processo e entregasse resultados de qualidade, e também como desenvolvedora, contribuindo diretamente no desenvolvimento de funcionalidades e soluções do projeto com foco no Front-End." data-en="Participation: I acted as Scrum Master, ensuring that the team followed the process correctly and delivered quality results, and also as a developer, directly contributing to the development of features and project solutions focusing on Front-End.">Participação: Atuei como Scrum Master, garantindo que o time seguisse corretamente o processo
                         e entregasse resultados de qualidade, e também como desenvolvedora, contribuindo diretamente no
                         desenvolvimento de funcionalidades e soluções do projeto com foco no Front-End.</p>
                     <div class="process-header social-links">
@@ -114,12 +143,12 @@
                     <div class="ABP">
                         <h1>HypoOrbit</h1>
                     </div>
-                    <h3>Terceiro semestre</h3>
+                    <h3 data-pt="Terceiro semestre" data-en="Third semester">Terceiro semestre</h3>
 
-                    <p>HypoOrbit é uma aplicação web que centraliza buscas de dados e imagens de satélite gratuitas 
+                    <p data-pt="HypoOrbit é uma aplicação web que centraliza buscas de dados e imagens de satélite gratuitas e permite gerar produtos derivados úteis para análise agrícola, como o NDVI (Índice de Vegetação por Diferença Normalizada) e o VCI (Índice de Condição da Vegetação)." data-en="HypoOrbit is a web application that centralizes searches for free satellite data and images and allows generating derived products useful for agricultural analysis, such as NDVI (Normalized Difference Vegetation Index) and VCI (Vegetation Condition Index).">HypoOrbit é uma aplicação web que centraliza buscas de dados e imagens de satélite gratuitas 
                         e permite gerar produtos derivados úteis para análise agrícola, como o NDVI (Índice de Vegetação por Diferença Normalizada) e o VCI (Índice de Condição da Vegetação).</p>
 
-                    <p>Participação: Atuei como Product Owner, organizando features e user stories, definindo o escopo de cada sprint e estruturando o Sprint Backlog para garantir clareza sobre o que deve ser realizado em cada tarefa. 
+                    <p data-pt="Participação: Atuei como Product Owner, organizando features e user stories, definindo o escopo de cada sprint e estruturando o Sprint Backlog para garantir clareza sobre o que deve ser realizado em cada tarefa. Além disso, atuando também como desenvolvedora Front-End, participando da implementação das funcionalidades e melhorias do projeto." data-en="Participation: I acted as Product Owner, organizing features and user stories, defining the scope of each sprint, and structuring the Sprint Backlog to ensure clarity on what needs to be done in each task. Additionally, acting as a Front-End developer, participating in the implementation of features and project enhancements.">Participação: Atuei como Product Owner, organizando features e user stories, definindo o escopo de cada sprint e estruturando o Sprint Backlog para garantir clareza sobre o que deve ser realizado em cada tarefa. 
                         Além disso, atuando também como desenvolvedora Front-End, participando da implementação das funcionalidades e melhorias do projeto.</p>
                     <div class="process-header social-links">
                         <a href="https://github.com/andressatoledo/HypoOrbit" target="_blank" rel="noopener noreferrer">
@@ -142,13 +171,13 @@
                     <div class="ABP">
                         <h1>HypoHealth</h1>
                     </div>
-                    <h3>Quarto semestre</h3>
+                    <h3 data-pt="Quarto semestre" data-en="Fourth semester">Quarto semestre</h3>
 
-                    <p>HypoHealth é um sistema inteligente de gerenciamento e dispensação de medicamentos que integra Internet das Coisas (IoT) e uma aplicação móvel . A solução foi projetada para auxiliar no controle específico de tratamentos, garantindo que o medicamento correto seja acessado apenas no horário programado, evitando erros de dosagem e esquecimentos.
+                    <p data-pt="HypoHealth é um sistema inteligente de gerenciamento e dispensação de medicamentos que integra Internet das Coisas (IoT) e uma aplicação móvel . A solução foi projetada para auxiliar no controle específico de tratamentos, garantindo que o medicamento correto seja acessado apenas no horário programado, evitando erros de dosagem e esquecimentos. O foco principal do projeto é promover a autonomia de pacientes , especialmente idosos com doenças crônicas, e oferecer segurança e tranquilidade aos familiares e cuidadores por meio do monitoramento remoto em tempo real." data-en="HypoHealth is an intelligent medication management and dispensing system that integrates Internet of Things (IoT) and a mobile application. The solution was designed to assist in the specific control of treatments, ensuring that the correct medication is accessed only at the scheduled time, preventing dosage errors and omissions. The main focus of the project is to promote patient autonomy, especially the elderly with chronic illnesses, and to offer safety and peace of mind to family members and caregivers through real-time remote monitoring.">HypoHealth é um sistema inteligente de gerenciamento e dispensação de medicamentos que integra Internet das Coisas (IoT) e uma aplicação móvel . A solução foi projetada para auxiliar no controle específico de tratamentos, garantindo que o medicamento correto seja acessado apenas no horário programado, evitando erros de dosagem e esquecimentos.
 
 O foco principal do projeto é promover a autonomia de pacientes , especialmente idosos com doenças crônicas, e oferecer segurança e tranquilidade aos familiares e cuidadores por meio do monitoramento remoto em tempo real.</p>
 
-                    <p>Participação: Atuei como desenvolvedora Front-End, Back-end e na parte de Hardware, pensando na melhor solução para ter uma boa usabilidade, inclusivo e funcionar corretamente o sistema e produto físico. </p>
+                    <p data-pt="Participação: Atuei como desenvolvedora Front-End, Back-end e na parte de Hardware, pensando na melhor solução para ter uma boa usabilidade, inclusivo e funcionar corretamente o sistema e produto físico." data-en="Participation: I worked as a Front-End, Back-End developer, and on the Hardware side, thinking about the best solution to ensure good usability, inclusiveness, and correct functioning of the system and physical product.">Participação: Atuei como desenvolvedora Front-End, Back-end e na parte de Hardware, pensando na melhor solução para ter uma boa usabilidade, inclusivo e funcionar corretamente o sistema e produto físico. </p>
                     <div class="process-header social-links">
                         <a href="https://github.com/andressatoledo/HypoOrbit" target="_blank" rel="noopener noreferrer">
                             <img class="icon"
@@ -172,13 +201,13 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
     <section class="matters">
         <div class="container">
             <div class="process-header">
-                <h2>Atividades complementares</h2>
+                <h2 data-pt="Atividades complementares" data-en="Complementary activities">Atividades complementares</h2>
             </div>
             <div class="semesters-grid">
-                <div class="semester-card" onclick="openModal(1)">1º Semestre</div>
-                <div class="semester-card" onclick="openModal(2)">2º Semestre</div>
-                <div class="semester-card" onclick="openModal(2)">3º Semestre</div>
-                <div class="semester-card" onclick="openModal(2)">4º Semestre</div>
+                <div class="semester-card" onclick="openModal(1)" data-pt="1º Semestre" data-en="1st Semester">1º Semestre</div>
+                <div class="semester-card" onclick="openModal(2)" data-pt="2º Semestre" data-en="2nd Semester">2º Semestre</div>
+                <div class="semester-card" onclick="openModal(3)" data-pt="3º Semestre" data-en="3rd Semester">3º Semestre</div>
+                <div class="semester-card" onclick="openModal(4)" data-pt="4º Semestre" data-en="4th Semester">4º Semestre</div>
             </div>
         </div>
 
@@ -195,8 +224,8 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
     <section class="matters">
         <div class="container">
             <div class="process-header">
-                <h2>Contato</h2>
-                <p>Entre em contato ou veja mais sobre meu trabalho:</p>
+                <h2 data-pt="Contato" data-en="Contact">Contato</h2>
+                <p data-pt="Entre em contato ou veja mais sobre meu trabalho:" data-en="Get in touch or see more about my work:">Entre em contato ou veja mais sobre meu trabalho:</p>
                 <div class="social-links">
                     <a href="https://github.com/andressatoledo" class="github" target="_blank"
                         rel="noopener noreferrer">
@@ -211,16 +240,40 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
     </section>
 
     <script>
+        let currentLang = 'pt';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt';
+            const btn = document.getElementById('langToggle');
+            btn.textContent = currentLang === 'pt' ? 'EN' : 'PT';
+            document.documentElement.setAttribute('lang', currentLang === 'pt' ? 'pt-BR' : 'en');
+
+           
+            document.querySelectorAll('[data-pt]').forEach(el => {
+                if (el.dataset[currentLang]) {
+                    el.textContent = el.dataset[currentLang];
+                }
+            });
+
+          
+            const modal = document.getElementById("semesterModal");
+            if (modal.style.display === "flex") {
+                
+                const modalTitleText = document.getElementById("modal-title").textContent;
+                let semesterNum = 1;
+                if (modalTitleText.includes('2')) semesterNum = 2;
+                if (modalTitleText.includes('3')) semesterNum = 3;
+                if (modalTitleText.includes('4')) semesterNum = 4;
+                openModal(semesterNum);
+            }
+        }
 
         function animateClick(element, event) {
-
             document.body.style.cursor = 'wait';
             setTimeout(() => {
                 window.location.href = element.href;
             }, 500);
         }
-
-
 
         function logoClick(element) {
             element.style.transform = 'scale(1.1) rotate(5deg)';
@@ -232,7 +285,6 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
             }, 200);
         }
 
-
         function projectClick(element) {
             element.style.transform = 'translateY(-15px) scale(1.02)';
             element.style.boxShadow = '0 25px 50px rgba(255, 107, 53, 0.3)';
@@ -242,18 +294,6 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
                 element.style.boxShadow = '0 20px 10px rgba(255, 107, 53, 0.2)';
             }, 300);
         }
-
-
-        // function stepClick(element) {
-        //     const stepNumber = element.querySelector('.step-number');
-        //     stepNumber.style.transform = 'scale(1.2) rotate(360deg)';
-        //     stepNumber.style.background = 'linear-gradient(135deg, #62b1a7, black)';
-
-        //     setTimeout(() => {
-        //         stepNumber.style.transform = 'scale(1) rotate(0deg)';
-        //         stepNumber.style.background = 'linear-gradient(135deg, #62b1a7, black)';
-        //     }, 500);
-        // }
 
         const observerOptions = {
             threshold: 0.1,
@@ -286,26 +326,97 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
 
         const semesterData = {
             1: [
-                { name: "Algoritmo e Lógica de programação", link: "https://github.com/andressatoledo/Algoritmo", description: "Estudo das bases fundamentais da programação, abordando conceitos de lógica, estruturas de controle, variáveis e funções. A prática foi realizada utilizando JavaScript para desenvolver algoritmos que resolvem problemas simples e aplicam conceitos de lógica computacional." },
-                { name: "Desenvolvimento Web I", link: "https://github.com/andressatoledo/Desenvolvimento-web-I", description: "Introdução ao desenvolvimento de sites estáticos, com foco em HTML, CSS e Bootstrap. Aprendi a estruturar páginas web, aplicar estilos visuais e criar layouts responsivos utilizando componentes básicos do Bootstrap." }
+                { 
+                    name_pt: "Algoritmo e Lógica de programação", 
+                    name_en: "Algorithm and Programming Logic", 
+                    link: "https://github.com/andressatoledo/Algoritmo", 
+                    desc_pt: "Estudo das bases fundamentais da programação, abordando conceitos de lógica, estruturas de controle, variáveis e funções. A prática foi realizada utilizando JavaScript para desenvolver algoritmos que resolvem problemas simples e aplicam conceitos de lógica computacional.", 
+                    desc_en: "Study of the fundamental basics of programming, covering logic concepts, control structures, variables, and functions. Practice was performed using JavaScript to develop algorithms that solve simple problems and apply computational logic concepts." 
+                },
+                { 
+                    name_pt: "Desenvolvimento Web I", 
+                    name_en: "Web Development I", 
+                    link: "https://github.com/andressatoledo/Desenvolvimento-web-I", 
+                    desc_pt: "Introdução ao desenvolvimento de sites estáticos, com foco em HTML, CSS e Bootstrap. Aprendi a estruturar páginas web, aplicar estilos visuais e criar layouts responsivos utilizando componentes básicos do Bootstrap.", 
+                    desc_en: "Introduction to static website development, focusing on HTML, CSS, and Bootstrap. I learned to structure web pages, apply visual styles, and create responsive layouts using basic Bootstrap components." 
+                }
             ],
             2: [
-                { name: "Matemática para computação", link: "https://github.com/andressatoledo/MatematicaComputacao", description: "Estudo dos conceitos matemáticos essenciais para a programação, incluindo lógica matemática, conjuntos, funções e operações algébricas, com foco na aplicação prática para resolver problemas computacionais." },
-                { name: "Estrutura de Dados", link: "https://github.com/andressatoledo/EstruturaDados", description: "Estudo das principais estruturas para organização e armazenamento de dados, como listas, pilhas e filas, além de algoritmos de ordenação, incluindo Bubble Sort, Selection Sort e Insertion Sort, aplicados para otimizar o processamento de informações." },
-                { name: "Técnicas de programação", link: "https://github.com/andressatoledo/Tecnicas-de-Programacao-I", description: "Introdução à programação orientada a objetos, abordando conceitos como classes, objetos, herança e encapsulamento, com foco na construção de códigos mais organizados, reutilizáveis e fáceis de manter." },
-                { name: "Desenvolvimento Web II", link: "https://github.com/andressatoledo/Desenvolvimento-web-II", description: "Aprendizado prático em React e TypeScript, utilizando conceitos como Context, useEffect, interfaces e manipulação de dados geoespaciais para criar aplicações web modernas e funcionais." }
+                { 
+                    name_pt: "Matemática para computação", 
+                    name_en: "Mathematics for Computing", 
+                    link: "https://github.com/andressatoledo/MatematicaComputacao", 
+                    desc_pt: "Estudo dos conceitos matemáticos essenciais para a programação, incluindo lógica matemática, conjuntos, funções e operações algébricas, com foco na aplicação prática para resolver problemas computacionais.", 
+                    desc_en: "Study of essential mathematical concepts for programming, including mathematical logic, sets, functions, and algebraic operations, focusing on practical application to solve computational problems." 
+                },
+                { 
+                    name_pt: "Estrutura de Dados", 
+                    name_en: "Data Structures", 
+                    link: "https://github.com/andressatoledo/EstruturaDados", 
+                    desc_pt: "Estudo das principais estruturas para organização e armazenamento de dados, como listas, pilhas e filas, além de algoritmos de ordenação, incluindo Bubble Sort, Selection Sort e Insertion Sort, aplicados para otimizar o processamento de informações.", 
+                    desc_en: "Study of the main structures for data organization and storage, such as lists, stacks, and queues, as well as sorting algorithms, including Bubble Sort, Selection Sort, and Insertion Sort, applied to optimize information processing." 
+                },
+                { 
+                    name_pt: "Técnicas de programação", 
+                    name_en: "Programming Techniques", 
+                    link: "https://github.com/andressatoledo/Tecnicas-de-Programacao-I", 
+                    desc_pt: "Introdução à programação orientada a objetos, abordando conceitos como classes, objetos, herança e encapsulamento, com foco na construção de códigos mais organizados, reutilizáveis e fáceis de manter.", 
+                    desc_en: "Introduction to object-oriented programming, covering concepts such as classes, objects, inheritance, and encapsulation, focusing on building more organized, reusable, and maintainable code." 
+                },
+                { 
+                    name_pt: "Desenvolvimento Web II", 
+                    name_en: "Web Development II", 
+                    link: "https://github.com/andressatoledo/Desenvolvimento-web-II", 
+                    desc_pt: "Aprendizado prático em React e TypeScript, utilizando conceitos como Context, useEffect, interfaces e manipulação de dados geoespaciais para criar aplicações web modernas e funcionais.", 
+                    desc_en: "Practical learning in React and TypeScript, using concepts such as Context, useEffect, interfaces, and geospatial data manipulation to create modern and functional web applications." 
+                }
             ],
             3: [
-                { name: "Banco de dados não relacional", link: "https://github.com/andressatoledo/Banco-dados-nao-relacional", description: "Estudo dos conceitos fundamentais de bancos de dados não relacionais, com foco em MongoDB, abrangendo documentos, coleções, modelagem orientada a documentos e operações CRUD, com ênfase na aplicação prática para estruturar, consultar e manipular dados em sistemas modernos." },
-                { name: "Técnicas de programação II", link: "https://github.com/andressatoledo/Tecnicas-Programacao-II", description: "Estudo das técnicas essenciais de programação aplicadas ao desenvolvimento web, abrangendo operações CRUD, integração com bancos de dados por meio do Mongoose, e os princípios de acoplamento e coesão, com foco na aplicação prática para estruturar sistemas mais organizados, eficientes e de fácil manutenção." },
-                { name: "Desenvolvimento Web III", link: "https://github.com/andressatoledo/Desenvolvimento-web-III", description: "Estudo dos princípios e práticas do desenvolvimento web, envolvendo utilização de Mongoose e Prisma para manipulação de dados, implementação de operações CRUD, configuração de conexões com bancos de dados e desenvolvimento de interfaces utilizando HTML e JavaScript, com foco na aplicação prática para construir sistemas modernos, dinâmicos e funcionais." }
+                { 
+                    name_pt: "Banco de dados não relacional", 
+                    name_en: "Non-Relational Databases", 
+                    link: "https://github.com/andressatoledo/Banco-dados-nao-relacional", 
+                    desc_pt: "Estudo dos conceitos fundamentais de bancos de dados não relacionais, com foco em MongoDB, abrangendo documentos, coleções, modelagem orientada a documentos e operações CRUD, com ênfase na aplicação prática para estruturar, consultar e manipular dados em sistemas modernos.", 
+                    desc_en: "Study of fundamental concepts of non-relational databases, focusing on MongoDB, covering documents, collections, document-oriented modeling, and CRUD operations, with emphasis on practical application to structure, query, and manipulate data in modern systems." 
+                },
+                { 
+                    name_pt: "Técnicas de programação II", 
+                    name_en: "Programming Techniques II", 
+                    link: "https://github.com/andressatoledo/Tecnicas-Programacao-II", 
+                    desc_pt: "Estudo das técnicas essenciais de programação aplicadas ao desenvolvimento web, abrangendo operações CRUD, integração com bancos de dados por meio do Mongoose, e os princípios de acoplamento e coesão, com foco na aplicação prática para estruturar sistemas mais organizados, eficientes e de fácil manutenção.", 
+                    desc_en: "Study of essential programming techniques applied to web development, covering CRUD operations, database integration via Mongoose, and coupling and cohesion principles, focusing on practical application to structure more organized, efficient, and maintainable systems." 
+                },
+                { 
+                    name_pt: "Desenvolvimento Web III", 
+                    name_en: "Web Development III", 
+                    link: "https://github.com/andressatoledo/Desenvolvimento-web-III", 
+                    desc_pt: "Estudo dos princípios e práticas do desenvolvimento web, envolvendo utilização de Mongoose e Prisma para manipulação de dados, implementação de operações CRUD, configuração de conexões com bancos de dados e desenvolvimento de interfaces utilizando HTML e JavaScript, com foco na aplicação prática para construir sistemas modernos, dinâmicos e funcionais.", 
+                    desc_en: "Study of web development principles and practices, involving the use of Mongoose and Prisma for data manipulation, CRUD implementation, database connection configuration, and interface development using HTML and JavaScript, focusing on practical application to build modern, dynamic, and functional systems." 
+                }
             ],
             4: [
-                { name: "Laboratório de desenvolvimento web", link: "https://github.com/andressatoledo/Laboratorio-desenvolvimento-web", description: "Introdução ao desenvolvimento front-end moderno utilizando React com ferramentas como Expo e Vite. A disciplina foca em conceitos básicos como componentes, props, estados e organização de interface, sem integração com banco de dados. O objetivo é construir interfaces interativas e entender a base do desenvolvimento web com React." },
-                { name: "Internet das coisas", link: "https://github.com/andressatoledo/Internet-das-coisas-e-aplicacoes", description: "Estudo prático de sistemas embarcados com uso de Arduino (C++), explorando sensores e atuadores. A disciplina aborda conceitos fundamentais como leitura de dados, controle de dispositivos e lógica de circuitos, incluindo configurações de pull-up e pull-down. O foco é compreender como dispositivos físicos interagem com software." },
-                { name: "Programação de dispositivos móveis I", link: "https://github.com/andressatoledo/Programacao-dispositivos-moveis-I", description: "Desenvolvimento de aplicações móveis utilizando React Native, com integração a um backend conectado a banco de dados relacional (PostgreSQL). A disciplina inclui criação de interfaces, consumo de dados, operações CRUD e comunicação com APIs, visando a construção de aplicações completas e funcionais." }
+                { 
+                    name_pt: "Laboratório de desenvolvimento web", 
+                    name_en: "Web Development Laboratory", 
+                    link: "https://github.com/andressatoledo/Laboratorio-desenvolvimento-web", 
+                    desc_pt: "Introdução ao desenvolvimento front-end moderno utilizando React com ferramentas como Expo e Vite. A disciplina foca em conceitos básicos como componentes, props, estados e organização de interface, sem integração com banco de dados. O objetivo é construir interfaces interativas e entender a base do desenvolvimento web com React.", 
+                    desc_en: "Introduction to modern front-end development using React with tools like Expo and Vite. The course focuses on basic concepts like components, props, states, and interface organization, without database integration. The goal is to build interactive interfaces and understand the foundation of web development with React." 
+                },
+                { 
+                    name_pt: "Internet das coisas", 
+                    name_en: "Internet of Things", 
+                    link: "https://github.com/andressatoledo/Internet-das-coisas-e-aplicacoes", 
+                    desc_pt: "Estudo prático de sistemas embarcados com uso de Arduino (C++), explorando sensores e atuadores. A disciplina aborda conceitos fundamentais como leitura de dados, controle de dispositivos e lógica de circuitos, incluindo configurações de pull-up e pull-down. O foco é compreender como dispositivos físicos interagem com software.", 
+                    desc_en: "Practical study of embedded systems using Arduino (C++), exploring sensors and actuators. The course covers fundamental concepts such as data reading, device control, and circuit logic, including pull-up and pull-down configurations. The focus is to understand how physical devices interact with software." 
+                },
+                { 
+                    name_pt: "Programação de dispositivos móveis I", 
+                    name_en: "Mobile Device Programming I", 
+                    link: "https://github.com/andressatoledo/Programacao-dispositivos-moveis-I", 
+                    desc_pt: "Desenvolvimento de aplicações móveis utilizando React Native, com integração a um backend conectado a banco de dados relacional (PostgreSQL). A disciplina inclui criação de interfaces, consumo de dados, operações CRUD e comunicação com APIs, visando a construção de aplicações completas e funcionais.", 
+                    desc_en: "Mobile application development using React Native, integrating with a backend connected to a relational database (PostgreSQL). The course includes interface creation, data consumption, CRUD operations, and API communication, aiming to build complete and functional applications." 
+                }
             ]
-
         };
 
         function openModal(semester) {
@@ -313,18 +424,28 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
             const modalTitle = document.getElementById("modal-title");
             const mattersContainer = document.getElementById("matters-container");
 
-            modalTitle.textContent = `${semester}º Semestre`;
+            const semesterTexts = {
+                1: { pt: "1º Semestre", en: "1st Semester" },
+                2: { pt: "2º Semestre", en: "2nd Semester" },
+                3: { pt: "3º Semestre", en: "3rd Semester" },
+                4: { pt: "4º Semestre", en: "4th Semester" }
+            };
+
+            modalTitle.textContent = semesterTexts[semester][currentLang];
             mattersContainer.innerHTML = "";
 
-            (semesterData[semester] || []).forEach(({ name, link, description }) => {
+            (semesterData[semester] || []).forEach(item => {
+                const name = currentLang === 'pt' ? item.name_pt : item.name_en;
+                const description = currentLang === 'pt' ? item.desc_pt : item.desc_en;
+                
                 const card = document.createElement("div");
                 card.className = "matter-card";
-                card.onclick = () => window.open(link, "_blank");
+                card.onclick = () => window.open(item.link, "_blank");
                 card.innerHTML = `
                     <div>
                         <h3>${name}</h3>
                         <hr>
-                        <p class="matter-space" >${description || "Descrição não disponível."}</p>
+                        <p class="matter-space">${description || (currentLang === 'pt' ? "Descrição não disponível." : "Description not available.")}</p>
                     </div>
                 `;
                 mattersContainer.appendChild(card);
@@ -332,7 +453,6 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
 
             modal.style.display = "flex";
         }
-
 
         function closeModal() {
             const modal = document.getElementById("semesterModal");
@@ -352,8 +472,6 @@ O foco principal do projeto é promover a autonomia de pacientes , especialmente
                 }
             });
         });
-
-
     </script>
 </body>
 
